@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jangiti Revathi | Portfolio</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: #000;
+      color: #f0f0f0;
+    }
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background: #111;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #b2ebf2;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #4db6ac;
+    }
+    section {
+      padding: 20px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #4db6ac;
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #333;
+      color: #f0f0f0;
+      padding: 15px;
+      margin: 3px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(77, 182, 172, 0.8);
+      text-align: left;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      border-color: #4db6ac;
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(77, 182, 172, 1);
+      cursor: pointer;
+    }
+    .card a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+    .card-grid .card {
+      flex: 1 1 calc(30% - 3px);
+      min-width: 220px;
+      height: auto;
+    }
+    footer {
+      background: #111;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    a {
+      color: #4db6ac;
+    }
+    a:hover {
+      color: #b2ebf2;
+    }
+    @media screen and (max-width: 768px) {
+      .card-grid .card {
+        flex: 1 1 100%;
+      }
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+      color: #4db6ac;
+    }
+      #contact .card {
+      max-width: 400px;
+      margin-left: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <img src="Profile.jpg" alt="Jangiti Revathi" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #4db6ac; margin-bottom: 10px;">
+
+    <h1>Jangiti Revathi</h1>
+    <p>Computer Science Engineer | Web Developer </p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="about" >
+    <h2>About</h2>
+    <div class="card">
+      <a href="#">
+        To obtain a role that allows me to utilize my skills and knowledge effectively, contributing to organizational success while gaining valuable experience for my professional growth.
+      </a>
+    </div>
+  </section>
+  <section id="education" >
+    <h2>Education</h2>
+    <div class="card-grid">
+      <div class="card">
+        <a href="#">
+          <strong>Velammal Institute of Technology</strong>
+          B.E. Computer Science and Engineering (Pursuing)<br>CGPA: 8.94
+        </a>
+      </div>
+      <div class="card">
+        <a href="#">
+          <strong>Sri Chaitanya Junior College</strong>
+          Intermediate (2020-2022)<br>95.5%
+        </a>
+      </div>
+      <div class="card">
+        <a href="#">
+          <strong>Tiny Tots E.M High School</strong>
+          SSC (2019-2020)<br>99.8%
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="skills" >
+    <h2>Skills</h2>
+    <div class="card-grid">
+      <div class="card"><a href="#">Java</a></div>
+      <div class="card"><a href="#">HTML / CSS</a></div>
+      <div class="card"><a href="#">MySQL</a></div>
+      <div class="card"><a href="#">VS Code</a></div>
+      <div class="card"><a href="#">Eclipse</a></div>
+      <div class="card"><a href="#">GitHub</a></div>
+      <div class="card"><a href="#">Communication</a></div>
+      <div class="card"><a href="#">Teamwork</a></div>
+      <div class="card"><a href="#">Problem Solving</a></div>
+    </div>
+  </section>
+  <section id="certifications" >
+    <h2>Certifications</h2>
+    <div class="card-grid">
+      <div class="card"><a href="#">AR/VR Certification</a></div>
+      <div class="card"><a href="#">IBM SkillsBuild - Journey of Cloud</a></div>
+      <div class="card"><a href="#">AWS Academy Graduate Cloud Foundations</a></div>
+    </div>
+  </section>
+  <section id="projects" >
+    <h2>Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <a href="#">
+          <strong>Count-Down Timer</strong>
+          The Count-Down Timer is a responsive web application built using HTML, CSS, and JavaScript. It allows users to set a target time or date, and then displays the remaining time in days, hours, minutes, and seconds. When the countdown reaches zero, a visual alert is shown to the user. The timer is fully customizable and can be applied to events, deadlines, or reminders. It features a user-friendly interface with real-time updates and ensures accurate time tracking.
+
+     </a>
+      </div>
+      
+      <div class="card">
+        <a href="#">
+          <strong>Voting System</strong>
+         The Voting System is a secure and efficient application developed using Java. It enables users to participate in elections or polls digitally while ensuring data integrity and privacy. Each user is authenticated and permitted to vote only once, preventing duplicate entries. The system manages the complete voting workflow, including vote casting, vote storage, and real-time result counting. Designed with a simple user interface, it provides transparency and ensures that results are generated accurately and quickly. This project demonstrates skills in Java programming, object-oriented principles, and problem-solving applied to a practical and socially relevant scenario.
+
+      </a>
+      </div>
+    </div>
+  </section>
+  <section id="achievements" >
+    <h2>Achievements</h2>
+    <div class="card-grid">
+      <div class="card"><a href="#">Participated in ISRO Space Hackathon</a></div>
+      <div class="card"><a href="#">Quiz Competition at SIMATS</a></div>
+      <div class="card"><a href="#">RBI@90 Nationwide Quiz Competition</a></div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+   
+         <div class="card">
+        📍 Tirupati, Andhra Pradesh<br>
+        </div>
+         <div class="card">
+        📞 +91 9063663877<br>
+        </div>
+         <div class="card">
+        📧 jangiti.revathi1102@gmail.com
+      <br>
+      </div>
+    <div class="card">
+      <a href="https://www.linkedin.com/in/jangiti-revathi-7b79072a1">LinkedIn</a> 
+      </div>
+      <div class="card">
+      <a href="https://github.com/JangitiRevathi">GitHub</a>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Jangiti Revathi. All rights reserved.
+  </footer>
+</body>
+</html>
